@@ -1,22 +1,22 @@
 ENTRY (_start)
 
 SECTIONS {
-	. = 0x00100000;
+	. = 1M;
 	
-	.text BLOCK(0x1000) : ALIGN(0x1000)
+	.text BLOCK(4K) : ALIGN(4K)
 	{
 		*(.multiboot)
 		*(.text)
 	}
-	.rodata BLOCK(0x1000) : ALIGN(0x1000)
+	.rodata BLOCK(4K) : ALIGN(4K)
 	{
 		*(.rodata*)
 	}
-	.data BLOCK(0x1000) : ALIGN(0x1000)
+	.data BLOCK(4K) : ALIGN(4K)
 	{
 		*(.data)
 	}
-	.bss BLOCK(0x1000) : ALIGN(0x1000)
+	.bss BLOCK(4K) : ALIGN(4K)
 	{
 		*(COMMON)
 		*(.bss)
