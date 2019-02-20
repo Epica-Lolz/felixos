@@ -10,3 +10,5 @@ littleosbook.github.io
 NOTE: To compile this operating system, you __must__ have a cross compiler, instructions on how to set one up here: https://wiki.osdev.org/GCC_Cross-Compiler
 
 To compile, run the build.sh script (you may have to make it executable first, e.g. "chmod u+x build.sh")
+
+(for .iso file only, check the "releases" tab)
